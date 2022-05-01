@@ -1,3 +1,6 @@
+
+
+
 const fs = require("fs");
 
 // Part 1 Read json file ===========================
