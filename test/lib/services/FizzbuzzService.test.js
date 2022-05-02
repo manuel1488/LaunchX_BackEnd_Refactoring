@@ -15,7 +15,7 @@ describe('Unit test for FizzbuzzService class', () =>{
         FizzbuzzService.applyValidationInExplorer(explorer15) // {name: "Explorer15", score: 15, trick: "FIZZBUZZ"}
 
 
-        expect(explorer1.trick).toBe(0)
+        expect(explorer1.trick).toBe(1)
         expect(explorer3.trick).toBe('FIZZ')
         expect(explorer5.trick).toBe('BUZZ')
         expect(explorer15.trick).toBe('FIZZBUZZ')
