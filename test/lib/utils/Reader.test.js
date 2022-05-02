@@ -7,5 +7,5 @@ describe('Unit test for Reader class', () => {
         const explorers = Reader.readJsonFile('data/explorers.json');
 
         expect(explorers).not.toBeUndefined()
-    })
+    })    
 })
