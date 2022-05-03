@@ -22,17 +22,17 @@ describe("Unit test for FizzbuzzService class", () =>{
     });
 
 
-    test('test for applyValidationInNumber', () => {
+    test("test for applyValidationInNumber", () => {
         let trick = FizzbuzzService.applyValidationInNumber(1);
         expect(trick).toBe(1);
 
         trick = FizzbuzzService.applyValidationInNumber(3);
-        expect(trick).toBe('FIZZ');
+        expect(trick).toBe("FIZZ");
 
         trick = FizzbuzzService.applyValidationInNumber(5);
-        expect(trick).toBe('BUZZ');
+        expect(trick).toBe("BUZZ");
 
         trick = FizzbuzzService.applyValidationInNumber(15);
-        expect(trick).toBe('FIZZBUZZ');
-    })
+        expect(trick).toBe("FIZZBUZZ");
+    });
 });
