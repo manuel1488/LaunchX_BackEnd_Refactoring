@@ -20,4 +20,19 @@ describe("Unit test for FizzbuzzService class", () =>{
         expect(explorer5.trick).toBe("BUZZ");
         expect(explorer15.trick).toBe("FIZZBUZZ");
     });
+
+
+    test('test for applyValidationInNumber', () => {
+        let trick = FizzbuzzService.applyValidationInNumber(1);
+        expect(trick).toBe(1);
+
+        trick = FizzbuzzService.applyValidationInNumber(3);
+        expect(trick).toBe('FIZZ');
+
+        trick = FizzbuzzService.applyValidationInNumber(5);
+        expect(trick).toBe('BUZZ');
+
+        trick = FizzbuzzService.applyValidationInNumber(15);
+        expect(trick).toBe('FIZZBUZZ');
+    })
 });
